@@ -1,0 +1,27 @@
+vars = set()
+import random
+import pandas as pd
+class A():
+    def __init__(self,name,age):
+        self.name=name
+        self.age = age
+
+
+a = A(name='maciek',age=23)
+b = A(name='ania',age=20)
+c = A('tato',50)
+
+d = {'a':{'q','b','c','d'}}
+print(d)
+index = [i for i in range(0,len(d['a']))]
+df = pd.DataFrame(list(d['a']))
+df[1]=index
+print(df)
+
+tx = [[1,2],[3,4],[5,6]]
+print(tx.pop(tx.index(tx[-1])))
+print(tx)
+
+p = {'maciek'}
+p.add('kasia')
+print(p)
